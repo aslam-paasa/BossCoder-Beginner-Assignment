@@ -1,0 +1,8 @@
+Things to learn:
+1. Take input as array and return output as int.
+    (a) Positive Number => return Count problems 
+2. Take input as int and return output as array.
+    (b) Multiple of 5 => return elements problems
+Note: All assignment problems are not available.
+3. Take input as int and return output as boolean.
+    (c) Palindrome Number
