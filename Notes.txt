@@ -6,3 +6,6 @@ Things to learn:
 Note: All assignment problems are not available.
 3. Take input as int and return output as boolean.
     (c) Palindrome Number
+
+Note: If anywhere the common difference is same, it will always be solved using AP.
+And if it is multiplied by same factor then it will be solved using Geometric Progression.

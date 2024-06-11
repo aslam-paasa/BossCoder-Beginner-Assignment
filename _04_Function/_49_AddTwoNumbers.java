@@ -7,7 +7,7 @@ package _04_Function;
 
 import java.util.Scanner;
 
-public class _02_AddTwoNumbers {
+public class _49_AddTwoNumbers {
 
     public static int add(int x, int y) {
         System.out.println("Your 1st number is " + x);
@@ -25,3 +25,13 @@ public class _02_AddTwoNumbers {
         System.out.println(sum);
     }
 }
+
+
+/**
+ * In Java & Python, all the primitive data types are pass by value means
+ * a copy of value is created and getting changed. And all the non-primitive 
+ * types are pass by reference means original value is passed and getting changed.
+ * 
+ * Note: Whenever possible, do pass by reference because pass by value is going
+ *       is going to create copied, which will take extra space.
+*/
