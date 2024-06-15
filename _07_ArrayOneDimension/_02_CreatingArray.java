@@ -1,4 +1,4 @@
-package _07_Array;
+package _07_ArrayOneDimension;
 
 public class _02_CreatingArray {
     public static void main(String[] args) {

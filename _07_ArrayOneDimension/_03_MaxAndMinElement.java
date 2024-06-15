@@ -1,4 +1,4 @@
-package _07_Array;
+package _07_ArrayOneDimension;
 
 import java.util.Scanner;
 
@@ -46,5 +46,4 @@ public class _03_MaxAndMinElement {
     }
 
     // TC: O(n) + O(n) => O(2n) => O(n)
-    // 1:06:52
 }

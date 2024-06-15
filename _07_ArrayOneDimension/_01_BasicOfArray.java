@@ -1,4 +1,4 @@
-package _07_Array;
+package _07_ArrayOneDimension;
 
 public class _01_BasicOfArray {
     public static void main(String[] args) {
