@@ -1,5 +1,9 @@
 package _01_FundamentalOfProgramming;
 
+/**
+ * https://leetcode.com/problems/keep-multiplying-found-values-by-two/
+*/
+
 public class _06_Multiplication {
     public static void main(String[] args) {
         int a = 3;

@@ -1,5 +1,9 @@
 package _04_Function;
 
+/**
+ * https://leetcode.com/problems/powx-n/description/
+*/
+
 import java.util.Scanner;
 
 public class _52_Pow {

@@ -2,6 +2,10 @@ package _03_Loops;
 
 import java.util.Scanner;
 
+/**
+ * https://leetcode.com/problems/reverse-integer/submissions/1289198808/
+*/
+
 public class _39_ReverseNumber {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
