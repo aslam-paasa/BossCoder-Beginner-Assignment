@@ -5,45 +5,49 @@ import java.util.Scanner;
 public class _02_CountDigits {
     public static void main(String[] args) {
         
-        // Har baar loop '++' krke nhi chlta, ye sawal btane k liye h
-        // Ek number diya h uske saare digits alag alag line m likhni h
-        // For example, 87654
+        // This program demonstrates counting the number of digits in a given number.
+        // Example: For the number 87654
+        // The output should be each digit on a new line:
         // 8
         // 7
         // 6
         // 5
         // 4
          
-
-        // Iss question m ye btana h kitni digits hai isme '65784383' i.e. '8'
-        // Constraints : 1 <= n < 10^9 means integer datatype use krna h 
-        // 453827 -> 6 digits
-        // Iske liye binary arithmetic krnge bachpan m jo pdhe the, 2 se divide krnge aur remainder aate rehta tha
-        // But iss case m hm 10 se divide krnge
-        // 10 | 453827                                          Counter(digit)
-        // 10 | 45282  -> 7 remainder (last digit nikaal diye)  1
-        // 10 | 4528   -> 2 remainder (last digit nikaal diye)  2
-        // 10 | 452    -> 8 remainder (last digit nikaal diye)  3
-        // 10 | 45     -> 2 remainder (last digit nikaal diye)  4
-        // 10 | 4      -> 5 remainder (last digit nikaal diye)  5
-        //    | 0      -> 4 remainder (last digit nikaal diye)  6
-        // Tbtk divide krte rho jbtk quotient 0 naa ho jae aur counter badhaate rho
+        // In this problem, we need to determine the number of digits in the number '65784383', which is '8'.
+        // Constraints: 1 <= n < 10^9 means we can use the integer data type.
+        // Example: For the number 453827, the output should be 6 digits.
+        // To achieve this, we use division by 10 to remove the last digit of the number.
+        // Example:
+        // 10 | 453827                                          Counter (digit count)
+        // 10 | 45282  -> 7 remainder (last digit removed)      1
+        // 10 | 4528   -> 2 remainder (last digit removed)      2
+        // 10 | 452    -> 8 remainder (last digit removed)      3
+        // 10 | 45     -> 2 remainder (last digit removed)      4
+        // 10 | 4      -> 5 remainder (last digit removed)      5
+        //    | 0      -> 4 remainder (last digit removed)      6
+        // Continue dividing until the quotient becomes 0, and increment the counter each time.
 
         Scanner scn = new Scanner(System.in);
+        System.out.println("Enter a number to count its digits:");
         int n = scn.nextInt();
 
-        // 'n' ko tbtk divide krte rhnge jbtk 'n = 0' naa ho jae
-        // aur har baar digit/counter badhaate rho
+        // Initialize the digit counter to 0
         int counter = 0;
-        while(n != 0) {
-            int quotient = n / 10;
-            int remainder = n % 10;
 
-            // 'n' ko quotient k equal kr do
+        // Continue dividing 'n' by 10 until 'n' becomes 0
+        while (n != 0) {
+            // Divide 'n' by 10 to get the quotient
+            int quotient = n / 10;
+
+            // Update 'n' to the quotient value
             n = quotient;
 
+            // Increment the digit counter
             counter++;
         }
-        System.out.println(counter);
+
+        // Print the total number of digits
+        System.out.println("Number of digits: " + counter);
     }
 }

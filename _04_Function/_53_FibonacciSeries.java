@@ -11,21 +11,25 @@ public class _53_FibonacciSeries {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
 
-        if(n >= 1) {
+        // Base Case
+        if(n == 0) {
             System.out.println(0); // 1st element
         }
-        if(n >= 2) {
+        if(n == 1) {
             System.out.println(1); // 2nd element
         }
 
-        int p = 1;
-        int pp = 0;
+        // Initialize the first two Fibonacci numbers
+        int prevElem = 1;
+        int prevToPrevElem = 0;
+        int currElem = 0;
 
-        for(int i = 3; i < n; i++) { // 3rd element till 'n'
-            int curr = p + pp;
-            System.out.println(curr);
-            pp = p;
-            p = curr;
+        // Compute the nth Fibonacci number
+        for (int i = 2; i <= n; i++) {
+            currElem = prevElem + prevToPrevElem;
+            System.out.println(currElem);
+            prevToPrevElem = prevElem;
+            prevElem = currElem;
         }
     }
 }

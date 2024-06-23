@@ -14,7 +14,7 @@ public class _11_CongratulatoryMessage {
 
         /**
          * if(boolen condition) {
-         *      // body to be execute
+         *       body to be execute
          * }
          * */ 
 

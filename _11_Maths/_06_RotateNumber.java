@@ -5,55 +5,53 @@ import java.util.Scanner;
 public class _06_RotateNumber {
     public static void main(String[] args) {
         
-        // 1) Pehle basics se krnge
-        // 2) Fir special case krnge
+        // 1) Start with the basics
+        // 2) Then handle special cases
 
-        // 23457 ko +1 se rotate kr do to 7 aage aa jaata then 2,3,4, 5
-        //    23457
-        // +1 72345
-        // +2 57234
-        // Pehli rotationse 7 aage aa gya tha and 2nd rotation se last 2 aage aa gya tha
-        // Jitni baar rotate krna h utna piche ki digit ko aage laenge
-        // Agar 2 se rotate krne h to 100 se divide kijiye
-        // Agar 3 se rotate krna h to 1000 se divide kijiye
-
-        // 975432 ko +2 se rotate krna h
-        // Humein ek number chaiye 100 aur ek number chaiye 10,000
-        // 100 dene se hm 9754|32 ko alag kr denge, Quotient-9754, Remainder-32
-        // Q) 32 aur 9754 ko kaise intact karau ki 329754 bane?
-        // Wo banane k liye 32 k niche four 0 chaiye - 320000 means 9754(Quotient) ki digit jitni h remainder k piche utne zero lagani hai
-        // then add kr denge
+        // Example: Rotate 23457 by +1
+        // Rotated: 72345
+        // Rotated again by +2: 57234
+        // For the first rotation, the last digit 7 moves to the front.
+        // For the second rotation, the last two digits 57 move to the front.
+        // To rotate by 2 positions, we can divide by 100 and rearrange.
 
         Scanner scn = new Scanner(System.in);
-        int n = scn.nextInt(); // 975432
-        int k = scn.nextInt(); // +2 => 100
+        System.out.println("Enter the number to rotate:");
+        int n = scn.nextInt(); // Example input: 975432
+        System.out.println("Enter the number of rotations:");
+        int k = scn.nextInt(); // Example rotations: +2
 
-        // number/count of digits
-        // 975432 [+2] se rotate krna h, no of digit humein mil gyi '6'
-        // Ab 975432 se humara jo divisor hai wo hona chaiye 100 wo 9754|32 ko alag kr dega
-        // Aur multiply m humne decide kiya tha wo hna chaiye 10,000
-        int nod = 0;
+        // Determine the number of digits in the number
+        int nod = 0; // Number of digits
         int temp = n;
         while(temp != 0) {
             temp = temp / 10;
             nod++;
         }
 
-        // divisor and multiplier
+        // Handle the case where k is greater than the number of digits
+        k = k % nod;
+        if (k < 0) {
+            k = k + nod; // Handle negative rotations
+        }
+
+        // Determine the divisor and multiplier for the rotation
         int div = 1;
         int mult = 1;
         for(int i = 1; i <= nod; i++) {
             if(i <= k) {
-                div = div * 10;
+                div = div * 10; // Divisor to split the number
             } else {
-                mult = mult * 10;
+                mult = mult * 10; // Multiplier to recombine the number
             }
         }
 
-        // divisor and multiplier banne k baad humein chaiye quotient & remainder
-        int q = n / div;
-        int r = n % div;
-        int ans = r * mult + q;
-        System.out.println(ans);
+        // Split the number using the divisor
+        int q = n / div; // Quotient part
+        int r = n % div; // Remainder part
+
+        // Combine the remainder and quotient parts to form the rotated number
+        int ans = r * mult + q; 
+        System.out.println("Rotated number: " + ans);
     }
 }
