@@ -1,6 +1,6 @@
 package _10_NumberSystemAndBitManipulation;
 
-public class _04_BitManipulation {
+public class _08_BitManipulation {
     public static void main(String[] args) {
         
         /** Bit Manipulation:

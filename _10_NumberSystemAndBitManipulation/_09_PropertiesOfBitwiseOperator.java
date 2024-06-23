@@ -1,6 +1,6 @@
 package _10_NumberSystemAndBitManipulation;
 
-public class _05_PropertiesOfBitwiseOperator {
+public class _09_PropertiesOfBitwiseOperator {
     public static void main(String[] args) {
         
         /**

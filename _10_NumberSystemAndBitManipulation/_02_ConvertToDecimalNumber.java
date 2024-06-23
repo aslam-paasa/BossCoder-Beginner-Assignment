@@ -35,5 +35,26 @@ public class _02_ConvertToDecimalNumber {
          *    (d) CANCELLED     -> 3
          *    We can map these as different numbers and use it with number system with base-4. 
          */
+
+        /**
+         * Example: Binary Number
+         * => Base = 2
+         * => Digits/Bits = 0 & 1
+         * => Counting = 0 -> 10 -> 100
+         *               1    11    101
+         *                          110
+         *                          111
+         * => Place Value = [110] => 1.2^2 + 1.2^1 + 0.2^1 = 6
+         * => Distinct Number possible = [0/1, 0/1, 0/1]
+         *                                 |    |    |
+         *                                 2    2    2 => 2^3 distinct number possible 
+         *                                             => means 3 digit de rkhe hai to total 8 number bna skte hai 
+         * => Minimum Number = [0, 0, 0]base-2
+         * => Maximum Number = [1, 1, 1]base-2
+         * 
+         * Note: Similarly,
+         * (a) Octal
+         * (b) Hexadecimal
+         * */ 
     }
 }
