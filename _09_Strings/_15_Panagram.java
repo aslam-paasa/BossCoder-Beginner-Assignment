@@ -14,7 +14,7 @@ package _09_Strings;
  * => https://leetcode.com/problems/check-if-the-sentence-is-pangram/description/
  */
 
-public class _04_Panagram {
+public class _15_Panagram {
     public static boolean check(String sentence) {
         int n = sentence.length();
 

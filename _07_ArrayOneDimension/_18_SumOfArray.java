@@ -5,7 +5,7 @@ package _07_ArrayOneDimension;
  * => TC: O(n)
 */
 
-public class _12_SumOfArray {
+public class _18_SumOfArray {
     public static void main(String[] args) {
         int[] input = {1,2,3,4};
         int n = input.length;

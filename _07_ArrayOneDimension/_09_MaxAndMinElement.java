@@ -2,7 +2,7 @@ package _07_ArrayOneDimension;
 
 import java.util.Scanner;
 
-public class _03_MaxAndMinElement {
+public class _09_MaxAndMinElement {
     public static void main(String[] args) {
 
         /**

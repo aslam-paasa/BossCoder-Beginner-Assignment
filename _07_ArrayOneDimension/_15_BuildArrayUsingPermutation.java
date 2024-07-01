@@ -1,6 +1,6 @@
 package _07_ArrayOneDimension;
 
-public class _09_BuildArrayUsingPermutation {
+public class _15_BuildArrayUsingPermutation {
     public static void main(String[] args) {
         int[] nums = { 0, 2, 1, 5, 3, 4 };
         int n = nums.length;

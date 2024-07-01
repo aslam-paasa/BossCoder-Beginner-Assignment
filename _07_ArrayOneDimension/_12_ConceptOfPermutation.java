@@ -1,6 +1,6 @@
 package _07_ArrayOneDimension;
 
-public class _06_ConceptOfPermutation {
+public class _12_ConceptOfPermutation {
     public static void main(String[] args) {
         
         /**

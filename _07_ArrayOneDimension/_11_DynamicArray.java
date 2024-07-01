@@ -3,7 +3,7 @@ package _07_ArrayOneDimension;
 import java.util.ArrayList;
 import java.util.List;
 
-public class _05_DynamicArray {
+public class _11_DynamicArray {
     public static void main(String[] args) {
 
         /**

@@ -7,7 +7,7 @@ package _07_ArrayOneDimension;
  * => TC: O(n)
 */
 
-public class _07_BuildArrayFromPermutation {
+public class _13_BuildArrayFromPermutation {
 
     public static int[] inverse(int[] input) {
         int n = input.length;

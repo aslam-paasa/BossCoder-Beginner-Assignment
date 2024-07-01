@@ -1,6 +1,6 @@
 package _07_ArrayOneDimension;
 
-public class _04_InternalStaticArrayWorking {
+public class _10_InternalStaticArrayWorking {
     public static void main(String[] args) {
         
         /**

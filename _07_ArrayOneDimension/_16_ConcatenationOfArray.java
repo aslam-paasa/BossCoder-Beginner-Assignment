@@ -9,7 +9,7 @@ package _07_ArrayOneDimension;
  * Note: Same as permutation of array(formula is provided).
  */
 
-public class _10_ConcatenationOfArray {
+public class _16_ConcatenationOfArray {
 
     public static void main(String[] args) {
         int[] input = { 1, 2, 1 };

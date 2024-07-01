@@ -12,7 +12,7 @@ package _07_ArrayOneDimension;
  * => TC: O(n^2)
 */
 
-public class _11_SumOfArray {
+public class _17_SumOfArray {
     public static void main(String[] args) {
         int[] input = {1, 2, 3, 4}; // Original array
         int n = input.length; // Length of the original array

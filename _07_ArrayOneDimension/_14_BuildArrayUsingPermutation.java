@@ -1,6 +1,6 @@
 package _07_ArrayOneDimension;
 
-public class _08_BuildArrayUsingPermutation {
+public class _14_BuildArrayUsingPermutation {
 
     public static int[] inverse(int[] input) {
         int n = input.length;

@@ -1,6 +1,6 @@
 package _09_Strings;
 
-public class _03_InternalWorkingOfStringInJava {
+public class _09_InternalWorkingOfStringInJava {
     public static void main(String[] args) {
         
         /**

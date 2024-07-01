@@ -1,6 +1,6 @@
 package _07_ArrayOneDimension;
 
-public class _13_ShuffleTheArray {
+public class _19_ShuffleTheArray {
 
     /**
      * [2,5,1,3,4,7] => [x1x2....xn | y1y2...yn] => [x1y1 x2y2 .... xnyn]
