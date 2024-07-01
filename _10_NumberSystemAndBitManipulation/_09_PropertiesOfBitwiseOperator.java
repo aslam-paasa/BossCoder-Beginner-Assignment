@@ -9,6 +9,8 @@ public class _09_PropertiesOfBitwiseOperator {
          * => 2 & 0     = 0
          */
         System.out.println("Property-1:");
+        System.out.println("0 & 0 = " + (0 & 0));
+        System.out.println("1 & 0 = " + (2 & 0));
         System.out.println("2 & 0 = " + (2 & 0)); // 0
 
         /**
@@ -17,6 +19,8 @@ public class _09_PropertiesOfBitwiseOperator {
          * => 2 | 0     = 2
          */
         System.out.println("\nProperty-2:");
+        System.out.println("0 | 0 = " + (0 | 0));
+        System.out.println("1 | 0 = " + (1 | 0));
         System.out.println("2 | 0 = " + (2 | 0)); // 2
 
         /**
@@ -26,6 +30,10 @@ public class _09_PropertiesOfBitwiseOperator {
          * => 2 ^ 2     = 0 (XOR with itself turns off all bits)
          */
         System.out.println("\nProperty-3:");
+        System.out.println("0 ^ 0 = " + (0 ^ 0));
+        System.out.println("0 ^ 1 = " + (0 ^ 1));
+        System.out.println("1 ^ 0 = " + (1 ^ 0));
+        System.out.println("1 ^ 1 = " + (1 ^ 1));
         System.out.println("2 ^ 0 = " + (2 ^ 0)); // 2
         System.out.println("2 ^ 2 = " + (2 ^ 2)); // 0
 
@@ -63,6 +71,10 @@ public class _09_PropertiesOfBitwiseOperator {
          * 
          * Examples:
          * => 1000 | 0001 = 1001 -> 9
+         * 
+         * Note: False means '0' means True doesn't means '1'.
+         *       True can be 1,2,3,4,...
+         *       True means all the bits are set to '1'. 
          */
         System.out.println("\nProperty-5:");
         System.out.println("0 | 1 = " + (0 | 1)); // 1
@@ -70,9 +82,40 @@ public class _09_PropertiesOfBitwiseOperator {
         System.out.println("8 | 1 = " + (8 | 1)); // 9
 
         /**
-         * Property-6: Future expansion
+         * Property-6: 
+         * => X ^ True = !X (reverse)
+         * => Example:
+         *    X = 1 1 0 1
+         *    ^ = 1 1 1 1
+         *    -----------
+         *        0 0 1 0
          */
         System.out.println("\nProperty-6:");
-        System.out.println("Future expansion");
+        System.out.println("0 ^ 1 = " + (0 ^ 1));
+        System.out.println("1 ^ 1 = " + (1 ^ 1));
+
+        /**
+         * Property-7:
+         * X & X = X
+         * */ 
+        System.out.println("\nProperty-7:");
+        System.out.println("0 & 0 = " + (0 & 0));
+        System.out.println("1 & 1 = " + (1 & 1));
+
+        /**
+         * Property-8:
+         * X | X = X
+         * */ 
+        System.out.println("\nProperty-8:");
+        System.out.println("0 | 0 = " + (0 | 0));
+        System.out.println("1 | 1 = " + (1 | 1));
+
+        /**
+         * Property-9:
+         * X ^ X = 0
+         * */ 
+        System.out.println("\nProperty-9:");
+        System.out.println("0 ^ 0 = " + (0 ^ 0));
+        System.out.println("1 ^ 1 = " + (1 ^ 1));
     }
 }

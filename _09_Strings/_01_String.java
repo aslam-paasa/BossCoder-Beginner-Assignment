@@ -40,7 +40,7 @@ public class _01_String {
         System.out.println("Length of the String is " + str.length());
 
         /**
-         * 5. Print the complete String
+         * 5. Print all elements of a String
         */
         System.out.print("Here is the complete String: ");
         for(int i = 0; i < str.length(); i++){

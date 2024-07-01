@@ -9,7 +9,7 @@ public class _05_DynamicArray {
         /**
          * Dynamic Array:
          * => The only difference between Static Array & Dynamic Array:
-         * We don't need to declare the size of array initially.
+         * => We don't need to declare the size of array initially.
          * => Size is not fixed.
          * 
          * Nomenclature:

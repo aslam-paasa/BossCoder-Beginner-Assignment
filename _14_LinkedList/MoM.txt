@@ -1,0 +1,24 @@
+LinkedList: Level-1
+1. AddLast
+2. Display
+3. RemoveFirst
+4. Get
+5. AddFirst
+6. AddAt 
+7. RemoveLast
+8. RemoveAt 
+9. Reverse Data Iterative
+10. Reverse Pointer Iterative
+11. Kth from end
+12. Mid
+13. Merge two Sorted LL 
+14. Display Reverse
+15. Remove Duplicates in Sorted LL 
+16. Odd Even
+17. Reverse Pointer Recursive
+18. Reverse Data Recursive
+19. Is LL Palindrome
+20. Fold LL
+21. K Reverse LinkedList
+22. Add two LL
+23. Intersection Point of two LLs
