@@ -13,41 +13,109 @@ public class _08_BitManipulation {
          * => Similarly, we have binary operators also.
          * 
          * Binary/Bitwise Operators:
-         * 1. AND Operator (|) => Binary Operator
-         * 2. OR Operator  (&) => Binary Operator
+         * 1. AND Operator (&) => Binary Operator
+         * 2. OR Operator  (|) => Binary Operator
          * 3. NOT Operator (!) => Unary Operator
          * 4. XOR Operator (^) => Binary Operator
          * => 0 -> False
          * => 1 -> True
-         * 
-         * 
+         */ 
+        
+        /** 
          * 1. OR Operation:
          * => It says result is true when any operand is true.
          * => True|False|False|False = True
          * 
          *    X      Y      X | Y (OR)
-         *    false  false  false
-         *    true   false  true
-         *    false  true   true
-         *    true   true   true
+         *    0      0      0
+         *    1      0      1
+         *    0      1      1
+         *    1      1      1
+         * Note: Koi v ek condition true ho to output true hoga.
+         */ 
+
+        boolean a = true;
+        boolean b = false;
+        boolean c = true;
+        boolean d = false;
+
+        System.out.println("*** OR Operation: ***");
+        System.out.println("true | false : " + (a | b));
+        System.out.println("true | true : " + (a | c));
+        System.out.println("false | false : " + (b | d));
+
+        /**
+         * Example-1:
+         * 3 =>  11
+         * 4 => 100
          * 
+         * 3 | 4 =>   1 1
+         *        | 1 0 0
+         *        +-------+
+         *          1 1 1 => 7 
+         * */ 
+
+        System.out.println("3 | 4 " + (3 | 4));
+        System.out.println();
+        
+        /** 
          * 2. AND Operation:
          * => It says result is false when any of the operand is false.
          * => False & True & True & True.
          * 
          *    X      Y      X & Y (AND)
-         *    false  false  false
-         *    true   false  false
-         *    false  true   false
-         *    true   true   true
+         *    0      0      0
+         *    1      0      0
+         *    0      1      0
+         *    1      1      1
+         * Note: Saari condition true honi chaiye tb true hoga.
+         */ 
+
+        System.out.println("*** AND Operation: ***");
+        System.out.println("true & false : " + (a & b));
+        System.out.println("true & true : " + (a & c));
+        System.out.println("false & false : " + (b & d));
+
+        /**
+         * Example-1:
+         * 2 => 10
+         * 3 => 11
          * 
-         * 3. NOT Operation:
+         * 2 & 3 =>  1 0
+         *         & 1 1
+         *         +-----+
+         *           1 0 => 2
+         * 
+         * Example-2:
+         * 5  =>  101
+         * 10 => 1010
+         * 
+         * 5 & 10  =>   1 0 1
+         *          & 1 0 1 0
+         *          +---------+
+         *            0 0 0 0 => 0
+        */
+        
+        System.out.println("2 & 3 : " + (2 & 3));
+        System.out.println();
+
+        /** 
+         * 3. One's Compliment/NOT Operation:
          * => Opposite of operand
          * 
-         *     X      !X (NOT)  
-         *     false  true  
-         *     true   false 
-         * 
+         *     X      ~X (NOT) => tilda(~) or !  
+         *     0      1  
+         *     1      0 
+         */ 
+        System.out.println("*** NOT Operation: ***");
+        System.out.println("!true : " + (!a));
+        System.out.println("!false : " + (!b));
+        System.out.println(~5);
+        System.out.println(~1);
+        System.out.println(~0); // Trick: -1
+        System.out.println();
+        
+        /** 
          * 4. XOR Operation:
          * => It is said to be true if both the operands are different.
          * => True ^ True = False
@@ -55,12 +123,21 @@ public class _08_BitManipulation {
          * => False ^ False = False
          * 
          *     X      Y       X ^ Y (XOR)  
-         *     false  false   false  
-         *     true   false   true
-         *     false  true    true
-         *     true   true    false
-         * 
-         * 
+         *     0      0       0  
+         *     1      0       1
+         *     0      1       1
+         *     1      1       0
+         * Note: Agar saare output same h to false/0 aaega.
+         * => Using this we can find two numbers are equal or not.
+         */ 
+        
+        System.out.println("*** XOR Operation: ***");
+        System.out.println("true ^ false : " + (a ^ b));
+        System.out.println("true ^ true : " + (a ^ c));
+        System.out.println("false ^ false : " + (b ^ d));
+        System.out.println();
+        
+        /** 
          * Note:
          * (a) Set Bit   => Bit == 1
          * (b) Unset Bit => Bit == 0

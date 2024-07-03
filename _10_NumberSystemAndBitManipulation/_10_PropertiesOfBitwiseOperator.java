@@ -48,7 +48,8 @@ public class _10_PropertiesOfBitwiseOperator {
 
 
         /**
-         * 3. Left Shift: Shift all the numbers to the left and one place is empty, then fill 0.
+         * 3. Left Shift: (<<) 
+         * => Shift all the numbers to the left and one place is empty, then fill 0.
          * =>   1101 -> 13
          *     11010 -> 26
          *    110100 -> 52
@@ -58,21 +59,66 @@ public class _10_PropertiesOfBitwiseOperator {
          * (abcd0)base-2 = d.2^1 + c.2^2 + b.2^3 + a.2^4
          *               = 2(abcd)
          * 
-         * x << 1 = 2.x
-         * x << k = 2^k.x (Formula)
+         * Formula:
+         * a << b = a * 2^b
+         * 5 << 2 = 5 * 2^2
+         *        = 5 * 4
+         *        = 20
          * */ 
+
+        System.out.println(5 << 1);
+        System.out.println(5 << 2); 
+        System.out.println(5 << 3); 
+
+        /**
+         * -2147483648: Ye baar baar change ho rha hai qki negative k case
+         *              m ye humein garbage value throw kr rha hai.
+         * => Grabage Value means koi v random value.
+        */
+
+        System.out.println(5 << -1);
+
+        int a = 12;
+        a = a << 3;
+        System.out.println(a);
 
 
         /**
-         * 4. Right Shift: Shift each numbers to the right and then no place for the LSB, then trim that no.
+         * 4. Right Shift: (>>) 
+         * => Shift each numbers to the right and then no place for the LSB, then trim that no.
          * => 1101 => 13
          *     110 => 6
          *      11 => 3
          * 
+         * Note: When we are right shifting, the number is getting half.
+         * 
          * (abcd) --------> (abc)base-2
          * 
-         * => x >> 1 = x/2
-         * => x >> k = x/2^k (Formula)
+         * Formula:
+         * a >> b = a / 2^b
+         * 6 >> 1 = 6 / 2^1
+         *        = 6 / 2
+         *        = 3
          * */  
+
+        System.out.println(6 >> 1);
+        System.out.println(100 >> 1);
+        System.out.println(100 >> 2); 
+        System.out.println(100 >> 3); 
+        System.out.println(-100 >> 1);
+        System.out.println(25 >> 1);
+
+        /**
+         * Agar mai kisi negative number k upar >> kr du to wo ek high
+         * value positive number mujhe de skta hai
+        */
+
+        /**
+          * 0: 
+          * => Grabage Value means koi v random value.
+         */
+
+        System.out.println(100 >> -1);
+
     }
 }

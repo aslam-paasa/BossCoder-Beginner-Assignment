@@ -3,6 +3,9 @@ package _10_NumberSystemAndBitManipulation;
 public class _01_NumberSystem {
     
     /**
+     * Q. What is Number System?
+     * => Method to represent numeric values or quantities using different digits.
+     * 
      * Q. How the numbers are represented?
      * => 7459
      * => 7 -> Thousands    => 7000
