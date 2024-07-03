@@ -1,6 +1,6 @@
 package _07_ArrayOneDimension;
 
-public class _30_PairsInArray {
+public class _31_PairsInArray {
     public static void main(String[] args) {
         /**
          * [2, 4, 6, 8, 10]

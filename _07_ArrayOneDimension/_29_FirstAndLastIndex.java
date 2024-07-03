@@ -2,7 +2,7 @@ package _07_ArrayOneDimension;
 
 import java.util.Scanner;
 
-public class _28_FirstAndLastIndex {
+public class _29_FirstAndLastIndex {
     // Ek array h jisme values repeat ho rhi hai
     // 10 20 20 30 30 30 30 40 40 40 40 50
     // 0  1  2  3  4  5  6  7  8  9  10 11

@@ -2,7 +2,7 @@ package _07_ArrayOneDimension;
 
 import java.util.Scanner;
 
-public class _10_SpanOfAnArray {
+public class _09_SpanOfAnArray {
 
     /**
      * Linear Search - Span of an array:

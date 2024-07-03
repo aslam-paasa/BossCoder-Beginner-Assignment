@@ -2,7 +2,7 @@ package _07_ArrayOneDimension;
 
 import java.util.Scanner;
 
-public class _11_BarChart {
+public class _10_BarChart {
 
     /**
      * Bar Chart:

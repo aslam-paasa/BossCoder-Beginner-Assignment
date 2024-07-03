@@ -1,57 +1,69 @@
 package _07_ArrayOneDimension;
 
 public class _34_MaxSubarraySum {
-    
-    /**
-     * MaxSubarray Sum using Kadane's algorithm:
-     * => [-2, -3, 4, -1, -2, 1, 5, -3]
-     * 
-     * Basic Logic:
-     * 1. +ve + +ve = +ve
-     * 2. +ve + -ve = +ve (where +ve is greater)
-     * 3. +ve + -ve = -ve (where -ve is greater) => Not favourable
-     * => Note: Final negative value lene se accha hai aap 0 le lo.
-     * 
-     * => Kadane's algorithm kehta hai ki hm ek ek kr k single loop chalae
-     *    jae, aur currentSum & maxSum nikaalte jae.
-     * => But humne jo logic upar discuss kiya wo kehta hai ki agar currentSum
-     *    m agar chije negative ho gyi to currentSum ko 0 kr do. 
-     * => CurrentSum m elements ko tbtk add krte jaenge jbtk final output
-     *    humara positive rehta hai, jiss point pe final output humaara
-     *    negative ho gya to waha pe hm uss currentSum ko 0 bna denge.
-     * 
-     * => arr:  [-2, -3, 4, -1, -2, 1, 5, -3]
-     * => CS : 0  0   0  4   3   1  2  7   4
-     * => MS :Inf 0   0  4   4   4  4  7   7   
-     * 
-     * MaxSubarraySum = 7 => [4,-1,-2,1,5,-3]
-     * 
-     * Note: Aisa case jaha pe saare numbers -ve hnge waha ye 0 dega
-     *       Uske liye humein special case likhna padega:
-     *       => [-1,-2,-3,-4]
-     *       => Ek loop lga k check kr lenge agar saare negative h to
-     *       => Fir isne se smallest negative print kr denge
-     * 
-     * TC: O(n)
-    */
-
     public static void main(String[] args) {
-        int numbers[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
-        kadanes(numbers);
+        /**
+         * Max Subarray Sum using Prefix Sum:
+         * [1, -2, 6, -1, 3]
+         * => Agar index-0 hai to yha index-0 tk ka saara sum store kr lenge i.e.1
+         * => 1st index m index-0to1 tk ka saara sum store kr lenge i.e. (1 + -2 = -1)
+         * => 2nd index: (1 + -2 + 6 = 5)
+         * => 3rd index: (1 + -2 + 6 + -1 = 4)
+         * => 4th index: (1 + -2 + 6 + -1 + 3 = 7)
+         * 
+         * => Prefix Sum means current index jaha pe hum hai waha se le k idx-0 tk ka
+         * sum kr
+         * k, current index m store kr dena is Prefix Sum.
+         * 
+         * Q. Ye Prefix Sum humaari help kaise krega?
+         * => Maan lijiye humein ek sum nikaalna hai ek subarray ka (idx-1 to 3)
+         * => [-2, 6, -1]
+         * => Ek to iska sum ek loop lga k nikaale (start=1 to end=3)
+         * => Prefix[end] - Prefix[start-1] formula :
+         * 4 - 1
+         * 3
+         * 
+         * 
+         * Formula:
+         * => Prefix[end] - Prefix[start-1]
+         * 
+         * => Prefix Array:
+         * prefix[i-1] + arr[i]
+         * prevSum + currentIndex
+         * 
+         * TC: O(n^2)
+         */
+
+        int numbers[] = { 1, -2, 6, -1, 3 };
+        printSubarrays(numbers);
     }
 
-    public static void kadanes(int numbers[]) {
-        int maxSum = Integer.MIN_VALUE;
+    public static void printSubarrays(int numbers[]) {
         int currentSum = 0;
+        int maxSum = Integer.MIN_VALUE;
+        int prefix[] = new int[numbers.length];
 
-        for(int i = 0; i < numbers.length; i++) {
-            currentSum = currentSum + numbers[i];
-            if(currentSum < 0) {
-                currentSum = 0;
-            }
-
-            maxSum = Math.max(currentSum, maxSum);
+        /**
+         * Calculate Prefix Array
+        */
+        for(int i = 1; i < prefix.length; i++) {
+            prefix[i] = prefix[i-1]  + numbers[i];
         }
-        System.out.println("Our max subarray sum : " + maxSum);
+
+        for(int i=0; i<numbers.length; i++){
+            int start = i;
+            for(int j=i; j<numbers.length; j++) {
+                int end = j;
+                currentSum = 0;
+                
+                currentSum = start == 0 ? prefix[end] : prefix[end] - prefix[start-1];
+
+                if(maxSum < currentSum) {
+                    maxSum = currentSum;
+                }
+            }
+        }
+        System.out.println("Max Sum: " + maxSum);
     }
 }
+

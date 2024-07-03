@@ -1,6 +1,6 @@
 package _07_ArrayOneDimension;
 
-public class _35_TrappingRainwater {
+public class _36_TrappingRainwater {
     public static void main(String[] args) {
         /**
          * Q. Given n non-negative integers representing an elevation map

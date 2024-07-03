@@ -5,7 +5,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class _26_RotateAnArray {
+public class _27_RotateArray {
     //  0 1 2 3 4 5 6
     // [1 2 3 4 5 6 7]
     //        | After rotating by k = 2

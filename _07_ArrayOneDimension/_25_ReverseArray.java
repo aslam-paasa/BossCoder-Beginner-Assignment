@@ -1,9 +1,10 @@
 package _07_ArrayOneDimension;
 
-public class _24_ReverseArray {
+public class _25_ReverseArray {
     public static void main(String[] args) {
         
-        /**
+        /** Reverse the array using Two Pointer Approach:
+         * 
          * [2,4,6,8,10] => [10,8,6,4,2]
          *  s       e
          * 
@@ -34,7 +35,7 @@ public class _24_ReverseArray {
         int first = 0; 
         int last = numbers.length - 1;
 
-        while(first < last) {
+        while(first <= last) {
             // swap
             int temp = numbers[last];
             numbers[last] = numbers[first];

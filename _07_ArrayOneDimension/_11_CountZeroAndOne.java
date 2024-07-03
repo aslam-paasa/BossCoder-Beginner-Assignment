@@ -1,6 +1,6 @@
 package _07_ArrayOneDimension;
 
-public class CountZeroAndOne {
+public class _11_CountZeroAndOne {
     public static void main(String[] args) {
         /**
          * Q. Count 0's and 1's in an Array

@@ -1,6 +1,6 @@
 package _07_ArrayOneDimension;
 
-public class _31_PrintSubarrays {
+public class _32_PrintSubarrays {
     public static void main(String[] args) {
         
         /**

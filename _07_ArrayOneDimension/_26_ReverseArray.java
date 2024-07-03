@@ -1,12 +1,19 @@
 // https://www.geeksforgeeks.org/problems/rotate-array-by-n-elements-1587115621/1
 package _07_ArrayOneDimension;
 
-public class _25_ReverseAnArray {
+public class _26_ReverseArray {
     public static void main(String[] args) {
         
         int[] arr = {10, 20, 30, 40, 50};
 
+        /**
+         * 1. Print array elements:
+        */
         display(arr);
+
+        /**
+         * 2. Print reverse array elements:
+        */
         reverse(arr);
         display(arr);
 

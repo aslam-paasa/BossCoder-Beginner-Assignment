@@ -1,6 +1,6 @@
 package _07_ArrayOneDimension;
 
-public class _27_BinarySearch {
+public class _28_BinarySearch {
     public static void main(String[] args) {
         
         /**
