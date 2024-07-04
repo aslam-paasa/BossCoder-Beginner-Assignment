@@ -2,7 +2,7 @@ package _04_Function;
 
 import java.util.Scanner;
 
-public class _58_SmallestEvenMultiple {
+public class _10_SmallestEvenMultiple {
     /**
      * Smallest Even Multiple:
      * => Input: n = 5

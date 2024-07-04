@@ -1,6 +1,6 @@
 package _04_Function;
 
-public class OddEven {
+public class _08_OddEven {
     public static void main(String[] args) {
         
         /**

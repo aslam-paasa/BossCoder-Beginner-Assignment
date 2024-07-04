@@ -1,8 +1,8 @@
-package _04_Function;
+package _03_Loops;
 
 import java.util.Scanner;
 
-public class _51_DrivingEligibilityCheck {
+public class _33_DrivingEligibilityCheck {
     public static boolean check(int age) {
         // if(age >= 18) {
         //     return true;

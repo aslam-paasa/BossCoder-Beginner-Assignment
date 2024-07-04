@@ -7,7 +7,7 @@ package _04_Function;
 
 import java.util.Scanner;
 
-public class _49_AddTwoNumbers {
+public class _03_AddTwoNumbers {
 
     public static int add(int x, int y) {
         System.out.println("Your 1st number is " + x);

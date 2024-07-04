@@ -1,6 +1,6 @@
 package _04_Function;
 
-public class AreaOfCircle {
+public class _07_AreaOfCircle {
 
     public static float circle_area(int radius) {
         return (float) 3.14 * radius * radius;

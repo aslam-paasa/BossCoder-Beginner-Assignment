@@ -2,7 +2,7 @@ package _04_Function;
 
 import java.util.Scanner;
 
-public class MaxOfThreeNumbers {
+public class _06_MaxOfThreeNumbers {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int a = scn.nextInt();

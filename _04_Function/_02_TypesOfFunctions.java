@@ -1,6 +1,6 @@
 package _04_Function;
 
-public class _48_TypesOfFunctions {
+public class _02_TypesOfFunctions {
     public static void main(String[] args) {
         /**
          * Types of functions:

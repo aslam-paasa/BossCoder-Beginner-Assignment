@@ -1,6 +1,6 @@
 package _04_Function;
 
-public class _47_FunctionExample {
+public class _01_FunctionExample {
 
     // <return_type> <name_of_function>(parameters) {
     //      body of fn

@@ -28,7 +28,7 @@ import java.util.Scanner;
  *         
  */
 
-public class _50_EvenSum {
+public class _09_EvenSum {
 
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);

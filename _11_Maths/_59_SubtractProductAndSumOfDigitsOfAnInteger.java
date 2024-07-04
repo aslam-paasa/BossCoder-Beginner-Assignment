@@ -1,4 +1,4 @@
-package _04_Function;
+package _11_Maths;
 
 import java.util.Scanner;
 

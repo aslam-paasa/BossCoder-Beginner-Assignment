@@ -2,7 +2,7 @@ package _04_Function;
 
 import java.util.Scanner;
 
-public class _49_AverageOfThreeNumbers {
+public class _04_AverageOfThreeNumbers {
     
     public static int average(int x, int y, int z) {
         System.out.println("Your 1st number is " + x);

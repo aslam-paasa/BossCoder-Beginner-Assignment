@@ -1,4 +1,4 @@
-package _04_Function;
+package _07_ArrayOneDimension;
 
 import java.util.ArrayList;
 
