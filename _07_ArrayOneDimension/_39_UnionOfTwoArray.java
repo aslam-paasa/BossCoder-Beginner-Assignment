@@ -2,7 +2,7 @@ package _07_ArrayOneDimension;
 
 import java.util.ArrayList;
 
-public class UnionOfTwoArray {
+public class _39_UnionOfTwoArray {
     public static void main(String[] args) {
         /**
          * Input array:

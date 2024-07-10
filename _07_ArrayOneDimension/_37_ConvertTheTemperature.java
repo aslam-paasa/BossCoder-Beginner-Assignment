@@ -2,7 +2,7 @@ package _07_ArrayOneDimension;
 
 import java.util.ArrayList;
 
-public class ConvertTheTemperature {
+public class _37_ConvertTheTemperature {
     public static void main(String[] args) {
 
         /**
