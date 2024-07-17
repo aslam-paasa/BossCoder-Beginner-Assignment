@@ -40,7 +40,7 @@ public class _01_2DIntro {
          *  => push_back = (1)  -> O(1)
          *  => push_back = (4)  -> O(1)
          *  => push_back = (8)  -> O(1)
-         * => push_back = (16)  -> O(N)
+         *  => push_back = (16)  -> O(N)
          * TC: O(N) at the end of the dynamic array.
          * 
          * 

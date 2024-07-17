@@ -5,17 +5,16 @@ public class _06_FrequencyOfElements {
         /**
          * Count Sort: (Non-Comparison Based Sorting) -> Find Frequency of Elements?
          * => Comparing the elements without asking which one is greater than which, we
-         * want to sort the array.
+         *    want to sort the array.
          * => [5,2,1,7,4,2,5,5,4,1,1,2,2]
          * => We have seen the concept of attendance array, index array. Now we will see
-         * frequency array.
+         *    frequency array.
+         * 
          * Note: All of these concepts are hashmaps. Once we learn HashMap, we will not
-         * use
-         * any names like attendance array, index array or frequency array.
+         *       use any names like attendance array, index array or frequency array.
          * 
          * => In index array, we store the index of the array. Similarly, in frequency
-         * array
-         * we will store how many times that particular element is present.
+         *    array we will store how many times that particular element is present.
          * 
          * +-------------------------------+
          * | 0 | 3 | 4 | 0 | 2 | 3 | 0 | 1 |
