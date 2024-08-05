@@ -1,0 +1,7 @@
+Recursion in Arrays:
+1. Display Arrays
+2. Display Arrays in Reverse 
+3. Max of an Array 
+4. First Index 
+5. Last Index 
+6. All Indices of an Array

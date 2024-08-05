@@ -1,0 +1,92 @@
+Time and Space Complexity Theoretical Analysis:
+O(1):
+(a) Operations, 
+(b) Array
+
+O(n): 
+(a) Linear Search, 
+(b) Power1, 
+(c) Power3, 
+(d) for1, 
+(e) for2, 
+(f) [for*for]
+
+O(n^2):
+(a) Bubble Sort, 
+(b) Selection Sort, 
+(c) Insertion Sort, 
+(d) for5
+
+O(n log logn):
+(a) Sieve of Eratosthenes
+
+O(nlogn): 
+(a) Merge Sort, 
+(b) Quick Sort, 
+(c) Arrays.sort, 
+(d) Collection.sort
+(e) Partitioning in an array
+(f) Quick Sort
+(g) Quick Select 
+(h) Count Sort/Highest Frequency Character
+(i) Radix Sort,
+(j) Sort dates, 
+(k) Sort01, Odd-Even, Move 0's to end 
+(m) Sort012, Sort low-high 
+(n) Pivot in sorted and rotated array 
+
+Merge Sort Related Question: O(n logn)
+(a) Check Duplicate
+(b) Target Sum Pair 
+(c) Target Sum Triplet
+(d) Merge Sort Code
+(e) Merge Sort TC Analysis 
+
+O(2^n) : Recursion related
+1. Fib Series
+2. PrintSS, 
+3. GetSS, 
+4. GetStairPath,
+5. PrintStairPath,
+6. GetMazePaths,
+7. PrintMazePaths,
+8. GetMazePathsWithJumps, 
+9. PrintMazePathsWithJumps
+
+10. GetKPC
+11. PrintKPC
+12. Print Permutation 
+13. First Index, Last Index, All Indices 
+
+Recursion with Backtracking:
+14. Target Sum Subset
+15. FloodFill 
+16. NQueens 
+17. KnightsTour 
+
+18. Tower Of Hanoi
+
+XOR related Questions: (Bit Manipulation)
+1. One unique rest twice
+2. Every number from 1 to n in array(1 missing, 1 duplicate)
+3. Two unique rest twice
+4. One unique rest thrice
+
+Note: In Level-1 we are collecting a bag of tricks. So, remember those
+      and the relationship with the next question.
+
+Maths for DP: (Read: Brilliant.org => 15 min each topic)
+1. Combinatorics
+2. Series
+3. Set Theory
+4. Logarithm
+5. Functions and Relations
+
+Level++2 Companies:
+1. TowerSearch
+2. Atlassian
+3. Sprinkler
+4. CodeNation
+5. GSOC
+6. UBER
+7. DirectI

@@ -1,0 +1,44 @@
+Recursion Foundation:
+1. Print Decreasing
+2. Print Increasing
+3. Print DecreasingIncreasing
+4. Factorial
+5. Power Linear
+6. Power Logarithmic 
+7. Print Zig Zag
+8. Tower of Hanoi
+
+(a) Print Decreasing: 
+=> EK baar upar gye aur niche aae.
+=> But Motion upar jaate hue kaam kr rha hai
+
+(b) Print Increasing:
+=> Motion niche jaate hue kaam kr rha hai
+
+(c) PrintDecreasingIncreasing:
+=> Motion upar jaate hue v kaam kiye aur niche aate hue v.
+
+(d) Factorial:
+=> Motion upar jaa k niche aate hue kaam kiya but the only difference
+   is isme value return hogi.
+
+(e) Power Linear:
+=> Wapas aate hue kaam hoga
+
+(f) Power Logarithm:
+=> Chota tree banega but wapas aate hue kaam hoga
+
+(g) Print Zig Zag:
+=> Pehli baar motion ka tree banega
+
+(h) Tower of hanoi:
+=> Isme v tree bangea
+=> With Tower of Hanoi, we will understand sometimes it is not possible
+   to solve question iteratively.
+
+
+Q. Why to avoid recursion?
+=> Qki wo space jyda khaata hai, but time same lagega.
+=> With Tower of Hanoi, we will understand sometimes it is not possible
+   to solve question iteratively. Because on each recursive call it
+   will create LEC in Stack.

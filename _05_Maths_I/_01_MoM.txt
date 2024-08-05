@@ -1,0 +1,10 @@
+Basic Maths:
+1. Count Digits
+2. Digits
+3. Reverse
+4. Inverse 
+5. Rotate 
+6. GCD and LCM
+7. Prime Factorization
+8. Benjamin Bulb 
+9. Pythagorean Triplet 

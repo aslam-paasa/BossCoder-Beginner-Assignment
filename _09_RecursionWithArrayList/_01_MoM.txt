@@ -1,0 +1,57 @@
+Recursion with ArrayList:
+1. Get Subsequence
+2. Get KPC 
+3. Get Stair Paths 
+4. get Maze Path
+5. Get Maze Path with multiple Path
+
+Remember:
+1. nC0 
+=> In how many ways can we select 0 apples out of 5?
+=> Don't pick any apple -> 5C0
+
+2. x^0 = 1
+
+3. In how many ways can I pay you 0 rupees?
+=> 1 way: I don't pay you anything
+
+4. In how many ways can we walk from 0th stair to 0-stair?
+=> 1 way: Don't move
+
+
+
+
+ Remember this diagram: Stair Maze 
+ 
+                     Destination
+                         ^
+                         |
+       +------+------+------+------+------+
+     P1|    P2|    P3|    P4|    P5|    P6|
+       |      |      |      |      |      |
+       +------+      +      +------+------+
+           |         |             |
+           i1        i2            i3
+           +         +             +
+           |         |             |
+           +---------+-------------+
+                     |
+                   Source
+ 
+ Kvi v humein source to destination jaana ho:
+ (a) Source se hum jaa skte the:
+     i. Intermediate(i1)
+     ii. Intermediate(i2)
+     iii. Intermediate(i3)
+ (b) Let's say:
+     i. 2 ways from Intermediate(i1) to destination
+        => Path-1
+        => Path-2
+     ii. 1 way from Intermediate(i2) to destination
+        => Path-3
+     iii. 3 ways from Intermediate(i3) to destination
+        => Path-4
+        => Path-5
+        => Path-6
+ => So, Source to Destination jaane k 6 raaste ho jaenge.
+
