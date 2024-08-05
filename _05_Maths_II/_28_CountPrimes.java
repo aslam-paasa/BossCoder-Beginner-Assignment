@@ -1,4 +1,4 @@
-package _05_Maths;
+package _05_Maths_II;
 
 public class _28_CountPrimes {
     public static void main(String[] args) {
