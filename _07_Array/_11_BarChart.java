@@ -1,8 +1,8 @@
-package _16_ArrayOneDimension;
+package _07_Array;
 
 import java.util.Scanner;
 
-public class _10_BarChart {
+public class _11_BarChart {
 
     /**
      * Bar Chart:

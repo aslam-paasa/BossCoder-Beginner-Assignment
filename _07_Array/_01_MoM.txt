@@ -1,5 +1,23 @@
-1. Introduction to Array
-2. Memory Map of Array 
-3. Span 
-4. Find 
-5. Barchart
+1. Internal Static Array 
+2. Creating a new array
+3. Intro to Array
+4. Taking Input in an array 
+5. Passing Array as Arguments
+6. Find the index of element [Linear Search]
+7. Find largest element in the array [Linear Search]
+8. Find max and min values in the array [Linear Search]
+9. Find span of an array (span = max-min) [Linear Search]
+10. Bar Chart [Linear Search]
+11. Count 0's and 1's 
+12. Sum of Array [Linear Search]
+13. Sum of Two Array [Linear Search]
+14. Difference between two arrays [Linear Search]
+15. Reverse the array [Linear Search]
+16. Rotate the array [Linear Search]
+17. Inverse of the array [Linear Search]
+18. Inverse of the array Issue [Linear Search]
+19. Subarray [Linear Search]
+20. Subset of the array [Linear Search]
+21. Binary Search 
+22. Broken Economy [Binary Search]
+23. Fi and Li [Binary Search]

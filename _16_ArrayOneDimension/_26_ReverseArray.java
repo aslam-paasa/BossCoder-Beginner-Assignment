@@ -1,4 +1,3 @@
-// https://www.geeksforgeeks.org/problems/rotate-array-by-n-elements-1587115621/1
 package _16_ArrayOneDimension;
 
 public class _26_ReverseArray {
