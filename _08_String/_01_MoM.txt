@@ -1,0 +1,11 @@
+1. Introduction to String 
+2. Print all palindromic substrings
+3. Compressions
+4. String Interning and Immutability 
+5. Introduction to StringBuilder 
+6. Toggle Case 
+7. String with difference of chars 
+8. String permutations 
+9. Introduction to ArrayLists 
+10. Remove primes 
+11. Frequency Interchange

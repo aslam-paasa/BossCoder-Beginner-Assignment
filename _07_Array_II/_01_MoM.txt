@@ -1,0 +1,6 @@
+Array 2-dimensional:
+1. 2d Introduction 
+2. Matrix Multiplication 
+3. Wave Display 
+4. Spiral Display 
+5. Exit Point of Matrix 
