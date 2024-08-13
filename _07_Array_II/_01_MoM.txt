@@ -4,3 +4,8 @@ Array 2-dimensional:
 3. Wave Display 
 4. Spiral Display 
 5. Exit Point of Matrix 
+6. Rotate by 90
+7. Diagonal Display 
+8. Ring Rotate 
+9. Search in a 2d Sorted Array[Binary Search in 2D]
+10. Saddle Point

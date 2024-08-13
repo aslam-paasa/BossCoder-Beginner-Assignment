@@ -2,9 +2,6 @@ package _03_Loops;
 
 import java.util.Scanner;
 
-// Q. How to print all the multiples of 'x' instead of all the multiples of 5.
-// => https://leetcode.com/problems/powx-n/
-
 public class _17_MultipleOfX {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);

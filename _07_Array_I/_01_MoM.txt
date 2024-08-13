@@ -21,3 +21,8 @@
 21. Binary Search 
 22. Broken Economy [Binary Search]
 23. Fi and Li [Binary Search]
+24. Max Subarray Sum O(n^3)
+25. Max Subarray Sum [Prefix Sum - O(n^2)]
+26. Max Subarray Sum [Kadane's Sum - O(n)] - Used to find max subarray sum
+27. Equilibrium Index
+28. Chocolate Carton Distribution[Sliding Window Concept]

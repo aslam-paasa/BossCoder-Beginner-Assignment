@@ -2,10 +2,6 @@ package _03_Loops;
 
 import java.util.Scanner;
 
-/**
- * https://leetcode.com/problems/count-primes/description/
-*/
-
 public class _27_PrimeNumber {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);

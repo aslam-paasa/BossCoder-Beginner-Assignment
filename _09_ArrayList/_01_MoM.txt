@@ -1,0 +1,6 @@
+Note: Jaisa realtion String and StringBuilder ka hai
+similar type se ArrayList v Array k saath behave krta hai. 
+Means aisa array jo grow kr skta hai
+
+ArrayList bilkul array k jaise performance de skta hai,
+bss size k grow ho skta hai.

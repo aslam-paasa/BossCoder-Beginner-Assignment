@@ -1,0 +1,44 @@
+Level-1: LinkedList 
+1. OOPs Introduction
+2. LinkedList Introduction
+3. LinkedList Creation:
+   (a) Add First 
+   (b) Add at index 
+   (c) Add Last 
+   (d) Remove First 
+   (e) Remove at index 
+   (f) Remove Last
+   (g) Get Value 
+   (h) Display 
+
+4. ArrayList Creation:
+   (a) Add First 
+   (b) Add at index 
+   (c) Add Last 
+   (d) Remove First 
+   (e) Remove at index 
+   (f) Remove Last
+   (g) Get Value 
+   (h) Display 
+   
+11. Reverse data iterative 
+12. Reverse pointer iterative 
+13. Kth from end 
+14. Mid 
+15. Merge two sorted linked lists 
+16. Merge Sort 
+17. Display Reverse 
+18. Add two LL 
+19. Intersection point of two LLs 
+
+20. Space Complexities 
+
+21. Reverse pointer recursive 
+22. Reverse data recursive 
+23. Is LL Palindrome 
+24. Fold 
+25. Remove Duplicates in sorted LinkedList 
+26. Odd Even LinkedList 
+27. K reverse in Linked List 
+
+Note: Level-1 LinkedList is enough for atleast Amazon.
