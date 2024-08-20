@@ -2,14 +2,14 @@ Level-1: LinkedList
 1. OOPs Introduction
 2. LinkedList Introduction
 3. LinkedList Creation:
-   (a) Add First 
-   (b) Add at index 
-   (c) Add Last 
-   (d) Remove First 
-   (e) Remove at index 
-   (f) Remove Last
-   (g) Get Value 
-   (h) Display 
+   (a) Add First      [done]
+   (b) Add at index   [done]
+   (c) Add Last       [done]
+   (d) Remove First   [done]
+   (e) Remove at index[done]
+   (f) Remove Last    [done]
+   (g) Get Value      [done]
+   (h) Display        [done]
 
 4. ArrayList Creation:
    (a) Add First 
@@ -21,12 +21,12 @@ Level-1: LinkedList
    (g) Get Value 
    (h) Display 
    
-11. Reverse data iterative 
-12. Reverse pointer iterative 
-13. Kth from end 
-14. Mid 
-15. Merge two sorted linked lists 
-16. Merge Sort 
+11. Reverse data iterative        [done]
+12. Reverse pointer iterative     [done]
+13. Kth from end                  [done]
+14. Mid                           [done]
+15. Merge two sorted linked lists [done]
+16. Merge Sort                    [done]
 17. Display Reverse 
 18. Add two LL 
 19. Intersection point of two LLs 

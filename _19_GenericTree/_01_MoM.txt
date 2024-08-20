@@ -1,0 +1,15 @@
+We have discussed till now:
+1. Array
+2. ArrayList
+   (a) addLast     O(1)
+   (b) removeLast  O(1)
+   (c) addFirst    O(n)
+   (d) removeFirst O(n)
+3. LinkedList
+   (a) addLast     O(n) [Avg constant]
+   (b) removeLast  O(n) [Avg constant]
+   (c) addFirst    O(1)
+   (d) removeFirst O(1)
+4. Stack
+5. Queue
+

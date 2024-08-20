@@ -1,0 +1,31 @@
+1. HashMap Introduction
+2. Highest Frequency Character
+3. Get Common Elements-1
+4. get Common Elements-2
+5. Longest Consecutive Sequence of Elements 
+
+
+6. Heaps/Priority Queue - Introduction and usage
+7. K-Largest Elements 
+8. Sorted K Sorted Array 
+9. Median Priority Queue 
+10. Merge K Sorted Lists 
+11. Write Priority Queue using Heap 
+12. Write HashMap 
+13. Efficient Heap Constructor 
+14. Heap - Comparable vs Comparator 
+15. Heap Introduction and usage 
+
+
+We have learned till now:
+Linear
+1. Array => Linear and fixed size
+2. ArrayList => Linear and dynamic size
+3. LinkedList => can store in defragmented memory
+4. Stack and Queue => LIFO
+
+Non-Linear:
+5. Generic Tree =>
+6. Binary Tree 
+7. Binary Search Tree 
+8. HashMap => store data in Tabular Structure

@@ -3,6 +3,10 @@ package _09_ArrayList;
 import java.util.ArrayList;
 
 public class _02_ArrayList {
+    /**
+     * Array:                               ArrayList:
+     * 1. Fixed Size                        1. Dynamic Size
+     * 2. Primitive data type can be stored 2. Primitive data type cannot be stored*/ 
     public static void main(String[] args) {
 
         /**
