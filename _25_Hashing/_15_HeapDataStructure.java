@@ -2,7 +2,7 @@ package _25_Hashing;
 
 import java.util.ArrayList;
 
-public class _17_HeapDataStructure {
+public class _15_HeapDataStructure {
     /**
      * Humaare paas Java m 2 tarike ka heap hota hai:
      * (a) Max Heap: Max Element has highest priority
@@ -439,10 +439,12 @@ public class _17_HeapDataStructure {
         /**
          * Heap Sort Algorithm: 
          * => Sorted in ascending order
-         * => TC: O(n logn)
+         * 
+         * Note: If you want to make it descending order, change the 
+         *       signs in the code.
         */
         while(!pq.isEmpty()) {
-            System.out.println(pq.peek());
+            System.out.print(pq.peek() + " ");
             pq.remove();
         }
     }
