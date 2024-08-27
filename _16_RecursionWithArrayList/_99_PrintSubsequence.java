@@ -7,7 +7,7 @@ import java.util.Scanner;
  * Level & Option: O(2^n)
  * Storing in an arraylist and then returning it
 */
-public class _22_PrintSubsequence {
+public class _99_PrintSubsequence {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         String str = scn.nextLine();

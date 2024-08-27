@@ -1,4 +1,4 @@
-package _Stack_And_Queue;
+package _26_Stack_And_Queue;
 
 public class _03_Stack_Implementation {
 

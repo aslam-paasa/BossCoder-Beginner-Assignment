@@ -1,4 +1,4 @@
-package _Stack_And_Queue;
+package _26_Stack_And_Queue;
 
 public class _01_Stack {
     public static void main(String[] args) {

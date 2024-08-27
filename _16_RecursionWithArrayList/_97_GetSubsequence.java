@@ -3,7 +3,7 @@ package _16_RecursionWithArrayList;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class _20_GetSubsequence {
+public class _97_GetSubsequence {
     /**
      * Subsequence using Faith & Expectation Trick: O(2^n)
      * => 3C0 => Out of 3, 0 apples are select krne ka 1 tarika hai

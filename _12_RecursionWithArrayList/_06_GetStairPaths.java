@@ -77,6 +77,11 @@ public class _06_GetStairPaths {
      *        => Path-5
      *        => Path-6
      * => So, Source to Destination jaane k 6 raaste ho jaenge.
+     * 
+     * Note: i1 + i2 + i3 => Total possible ways 
+     * => [Same as fibonacci => f(n-1) + f(n-2) + f(n-3)]
+     * => Only difference is base case.
+     * 
     */
 
     public static void main(String[] args) {
@@ -101,26 +106,35 @@ public class _06_GetStairPaths {
 
         /**
          * Recursive Relation:
+         * 1. Path from n - 1 stair
+         * 2. Path from n - 2 stair
+         * 3. Path from n - 3 stair
         */
         ArrayList<String> pathFromNminOne   = getStairPaths(n-1);
         ArrayList<String> pathFromNminTwo   = getStairPaths(n-2);
         ArrayList<String> pathFromNminThree = getStairPaths(n-3);
 
+
         ArrayList<String> pathsFromN = new ArrayList<>();
+
+        // Means for each String in the ArrayList paths from n - 1
         for(String pathFromNm1: pathFromNminOne) {
             String pathFromN = "1" + pathFromNm1;
             pathsFromN.add(pathFromN);
         }
 
+        // Means for each String in the ArrayList paths from n - 2
         for(String pathFromNm2: pathFromNminTwo) {
             String pathFromN = "2" + pathFromNm2;
             pathsFromN.add(pathFromN);
         }
 
+        // Means for each String in the ArrayList paths from n - 3
         for(String pathFromNm3: pathFromNminThree) {
             String pathFromN = "3" + pathFromNm3;
             pathsFromN.add(pathFromN);
         }
+
         return pathsFromN;
     }
 }
@@ -163,3 +177,4 @@ public class _06_GetStairPaths {
      * until we reach a base case (in this case, when n=0 or n=1).
      * Then, we combine the solutions to the sub-problems to solve the original problem.
      */
+

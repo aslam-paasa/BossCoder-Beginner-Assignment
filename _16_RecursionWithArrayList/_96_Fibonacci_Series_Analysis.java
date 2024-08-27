@@ -42,7 +42,7 @@ package _16_RecursionWithArrayList;
  *       approach inefficient for large values of n.
 */
 
-public class _19_Fibonacci_Series_Analysis {
+public class _96_Fibonacci_Series_Analysis {
     public static int fibRecursive(int n) {
         if(n == 0 || n == 1) {
             return n;

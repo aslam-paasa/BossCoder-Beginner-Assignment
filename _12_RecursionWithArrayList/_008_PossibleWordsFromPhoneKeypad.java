@@ -1,13 +1,10 @@
 package _12_RecursionWithArrayList;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
-public class _08_GetKPC {
+public class _008_PossibleWordsFromPhoneKeypad {
     /**
-     * GFG: Possible words from Phone Digits
-     * Leetcode: Letter Combination of a Phone Number
-     * 
+     * GFG:
      * Hum bolnge avi mai 2 pe hu, ek loop laa jisme "A" pe tk
      * temp bna de, aur isko bolnge "A" ko maine add kr diya
      * hai, tu jaa aur agar main 4 ko press karunge to kitne 
@@ -45,66 +42,19 @@ public class _08_GetKPC {
      *    ... 
      *    ...
      * 
-     *  
-     * Keypad phone m har key k upar kuch text likha hota tha:
-     * 0 -> .;
-     * 1 -> abc
-     * 2 -> def
-     * 3 -> ghi
-     * 4 -> jkl
-     * 5 -> mno
-     * 6 -> pqrs
-     * 7 -> tu
-     * 8 -> vwx
-     * 9 -> yz
-     * 
-     * Input: 6 7
-     *        p t
-     *        q u
-     *        r
-     *        s
-     * All Possible Values of 67: pt, pu, qt, qu, rt, ru, st, su
+     *    
     */
-
-    /**
-     * 1. Expectation:
-     * => f(67) = [pt, pu, qt, qu, rt, ru, st, su]
-     * 
-     * 2. Faith: 
-     * => f(7) = [t, u]
-     * 
-     * 3. EwF:
-     * => p.f(7)
-     * => q.f(7)
-     * => r.f(7)
-     * => s.f(7)
-    */
-
-    /**
-     * High Level: f(367)
-     * Input: 3 6 7
-     *        g p t
-     *        h q u
-     *        i r
-     *          s
-     * 
-     * 1. Expectation: f(367)
-     * => gpt, gpu, gqt, gqu, grt, gru, gst, gsu
-     * => hpt, hpu, hqt, hqu, hrt, hru, hst, hsu
-     * => ipt, ipu, iqt, iqu, irt, iru, ist, isu
-     * => 24 
-    */
-
-    public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);
-        String str = scn.nextLine();
-
-        ArrayList<String> words = getKPC(str);
-        System.out.println(words);
-    }
 
     // Keypad Button:                0      1      2      3      4     5       6      7      8      9  
     public static String[] codes = {".;", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tu", "uvw", "xyz"};
+
+    
+
+    public static void helper(int[] a, int n, String temp, int i) {
+        if( i == n ) {
+            ans.add(temp);
+        }
+    }
 
     // Function to find list of all words possible by pressing given number
     // 367
@@ -144,12 +94,6 @@ public class _08_GetKPC {
          * 1. Iteration-1: g
          * 2. Iteration-2: h
          * 3. Iteration-3: i
-         * 
-         * => Loop m bolnge ki "i" tu "0" se start kro aur code.length()
-         *    tk naa ho jae tbtk ++ krte rho.
-         * => i=0 : g
-         *    i=1 : h
-         *    i=2 : i
         */
         for(int i = 0; i < code.length(); i++) {
             char chi = code.charAt(i);

@@ -2,7 +2,7 @@ package _16_RecursionWithArrayList;
 
 import java.util.Scanner;
 
-public class _21_PrintSubsequence {
+public class _98_PrintSubsequence {
     /**
      * Subsequence by Level and Option Trick: O(2^n)
      * => Numerator   = xyz
