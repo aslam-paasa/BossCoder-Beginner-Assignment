@@ -52,7 +52,7 @@ public class _008_PossibleWordsFromPhoneKeypad {
 
     public static void helper(int[] a, int n, String temp, int i) {
         if( i == n ) {
-            ans.add(temp);
+            // ans.add(temp);
         }
     }
 
