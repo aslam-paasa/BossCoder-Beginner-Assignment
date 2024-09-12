@@ -1,4 +1,4 @@
-package _25_LinkedList;
+package _26_LinkedList;
 
 public class _01_LinkedListIntro {
     public static void main(String[] args) {

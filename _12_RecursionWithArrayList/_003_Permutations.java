@@ -74,6 +74,7 @@ public class _003_Permutations {
 
         return String.valueOf(charArray);
     }
+    
     public static void permute(String str, int l, int r) {
         if(l == r) {
             System.out.println(str);
