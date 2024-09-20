@@ -23,7 +23,7 @@ public class _12_TowerOfHanoi {
      * 
      * 1. Expectation: function toh(3, A, B, C)
      * => Print all required instructions following which we can move
-     *    3 dics from A to B using C.
+     *    3 discs from A to B using C.
      * 
      * 2. Faith: function toh(2, A, B, C)
      * => This will print all instructions following which we can move
