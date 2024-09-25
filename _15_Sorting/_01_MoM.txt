@@ -1,0 +1,90 @@
+Time and Space Complexity Theoretical Analysis:
+1. O(1) = Operations, Array
+2. O(n) = Linear Search, Power1, Power3, for1, for2, [for*for]
+3. O(logn) = Binary Search, Power2, Power3, Euler Power3 Analysis, for3, for4
+4. O(n^2) = Bubble Sort, Selection Sort, Insertion Sort, for5
+5. O(2^n) = printSubsequence, fib
+6. O(nlogn) = Merge, Quick, Arrays.sort, Collection.sort
+7. Amortized Analysis = ArrayList, StringBuilder
+8. Polynomial = 1.x^n + 2.x^(n-1) + 3.x^(n-2) + ... + n.x^1
+9. Sieve of Eratosthenes
+10. Check Duplicates
+11. Highest Frequency Character
+12. Sort01, odd-even, move 0's to end
+13. Sort012, Sort lo-hi
+13. Target sum pair
+14. Target sum triplet
+15. One unique rest twice
+16. Two unique rest twice
+
+Recursion related: O(2^n) 
+1. Fib Series
+2. GetSS, 
+3. GetStairPath,
+4. GetMazePaths,
+5. GetMazePathsWithJumps, 
+6. PrintSS, 
+7. PrintStairPath, 
+8. PrintMazePaths, 
+9. PrintMazePathsWithJumps
+
+Maths for DP: (Read: Brilliant.org => 15 min each topic)
+1. Combinatorics
+2. Series
+3. Set Theory
+4. Logarithm
+5. Functions and Relations
+
+Sorting:
+1. Sorting
+2. Elements greater than K
+3. Bubble Sort
+4. Selection Sort
+5. Insertion Sort 
+6. Calculate Polynomial 
+7. Count Sort
+8. Frequency of Elements 
+9. Frequency of String 
+10. Prime Number: Square Root of Optimization 
+11. Sieve of Eratosthenes 
+12. Merge Two Sorted Arrays 
+13. Check Duplicates 
+14. Target Sum Pair 
+15. Target Sum Triplet 
+16. Merge Sort 
+17. Sort-01
+18. Sort-Odd-Even 
+19. Move 0's to the end 
+20. Partition of Array 
+21. Sort-012 
+22. Sort-low-high
+23. Count Sort
+24. Radix Sort 
+25. Sort Dates
+26. Quick Select 
+27. Quick Sort 
+
+Merge Sort Related Question:
+(a) Check Duplicate
+(b) Target Sum Pair 
+(c) Target Sum Triplet
+(d) Merge Sort Code
+(e) Merge Sort TC Analysis 
+
+XOR related Questions:
+1. One unique rest twice
+2. Every number from 1 to n in array(1 missing, 1 duplicate)
+3. Two unique rest twice
+4. One unique rest thrice
+
+Note: In Level-1 we are collecting a bag of tricks. So, remember those
+      and the relationship with the next question.
+
+Level++2 Companies:
+1. TowerSearch
+2. Atlassian
+3. Sprinkler
+4. CodeNation
+5. GSOC
+6. UBER
+7. DirectI
