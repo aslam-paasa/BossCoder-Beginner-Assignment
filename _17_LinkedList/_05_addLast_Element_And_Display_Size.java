@@ -3,7 +3,7 @@ package _17_LinkedList;
 import java.util.Scanner;
 
 
-public class _05_addLastAndDisplay {
+public class _05_addLast_Element_And_Display_Size {
 
     /**
      * Yeh LinkedList class hai jisme hum 3 cheezein store karte hain:

@@ -5,7 +5,7 @@ public class _12_PostIncrement {
         // Post Increment
         int x = 2;
 
-        // x++ means use the valuue of x then increment
+        // x++ means use the value of x then increment
         System.out.println(x++);
     }
 }

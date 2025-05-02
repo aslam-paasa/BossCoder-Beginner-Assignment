@@ -2,7 +2,7 @@ package _17_LinkedList;
 
 import java.util.Scanner;
 
-public class _04_Display {
+public class _04_Display_Size_Of_LL {
 
     public static class LinkedList {
         Node head;
@@ -15,6 +15,7 @@ public class _04_Display {
                 System.out.println("List is empty.");
                 return;
             }
+            
             for (Node temp = head; temp != null; temp = temp.next) {
                 System.out.print(temp.data + " ");
             }

@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class _10_KthNodeFromEnd {
     /**
      * Q. Find the Kth Node from the end without using Size Property?
-     * fast
+     *                  fast
      * => Approach: Fast and Slow Pointer or Hare & Tortoise:
      * => [a]->[b]->[c]->[d]->[e]->[f]->[g] ,k=3
-     * Slow |
-     * V
-     * Kth Node
+     *               Slow |
+     *                    V
+     *                 Kth Node
      * => We will use 2 pointers: (a) Fast, (b) Slow
      * => Akele fast ko chala do 'k' baar to isse dono k bich 'k' ka gap
      * ho jaega. Ab dono ko ek ek step move krte rho jisse dono ka 'k'
@@ -18,7 +18,7 @@ public class _10_KthNodeFromEnd {
      * kth position pe hoga.
      * 
      * Q. Difference between at Index and at Position?
-     * => Index : 0, 1, 2, 3
+     * => Index :   0, 1, 2, 3
      * => Position: 1, 2, 3, 4
      * 
      * Input: Output LinkedList

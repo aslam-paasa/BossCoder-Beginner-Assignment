@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class _09_PowerLinear {
     /**
-     * Calculate x raise to the power n.
+     * Leetcode-50: Pow(x, n)
+     * Q. Calculate x raise to the power n.
      * => Example: x^n => 2^5 = 32
      * 
      * Q. Power(2, 5) = 2.2.2.2.2 = 32

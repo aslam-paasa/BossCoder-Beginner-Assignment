@@ -24,5 +24,3 @@ public class _02_Pattern {
         }
     }
 }
-
-// 26:10

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class _07_Factorial {
     /**
      * 1. Expectation: f(5) = 5 * 4 * 3 * 2 * 1
-     * 2. Faith      : f(4) = 4 * 3 * 2 * 1
+     * 2. Faith      : f(4) = 4 * 3 * 2 * 1     [Subproblem]
      * 3. EwF        : f(5) = 5 * f(4)
      * */
     public static void main(String[] args) {

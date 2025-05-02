@@ -90,3 +90,161 @@ Level++2 Companies:
 5. GSOC
 6. UBER
 7. DirectI
+
+Backtracking is a systematic approach for solving problems by exploring
+all possible solutions. Here are tips & strategies for solving problems
+using backtracking.
+
+void backtrack(arguments) {
+	if (condition == true) { // Condition when we should stop our exploration.
+		result.push_back(current);
+		return;
+	}
+	for (int i = num; i <= last; i++) {
+		current.push_back(i); // Explore candidate.
+		backtrack(arguments);
+		current.pop_back();   // Abandon candidate.
+	}
+}
+
+Indicators for Backtracking Problems:
+1. Exploration of all possibilities:
+   - Backtracking is often used when you need to explore all possible
+     solutions or combinations of a problem space.
+   - If the problem asks for finding all valid configurations or 
+     combinations, it might be backtracking problem.
+2. Decision Tree Structure:
+   - Look for problems where decisions are made at each step, leading to
+     a tree-like structure of possibilities.
+   - Each decision at a particular step may result in multiple subproblems,
+     and backtracking is used to explore each decision path.
+3. Choices and Constraints:
+   - Problems that involve making choices at each step, subject to certain
+     Constraints, are good condidates for backtracking.
+   - The Constraints guide the choices made during the exploration process.
+4. Permutations and Combinations:
+   - Problems that ask for generating permutations, combinations, or
+     subsets often lend themselves to backtracking solutions.
+   - The process of building permutations or combinations can be modeled
+     using recursive backtracking.
+5. Exponential Time Complexity:
+   - Backtracking solutions often have an exponential time complexity,
+     as they explore all possible combinations or paths.
+   - Problems with large solution spaces that cannot be pruned efficiently
+     may suggest a backtracking approach.
+6. State Reversal or Undoing:
+   - Look for problems where you make a choice, explore, and then need
+     to reverse or undo that choice to explore other possibilities.
+   - Backtracking involves moving back to the previous state to explore
+     alternative paths. 
+
+
+
+Things to remember before we jump to some backtracking problems:
+1. Permutation: No. of ways to order some input.
+   - Ex: Permutations of ABCD, taken 3 at a time(24 variants)
+         ABC, ACB, BAC, ...
+2. Combination: No. of ways of selecting from some input.
+   - Ex: Combination of ABCD, taken 3 at a time(4 variants)
+         ABC, ABD, ACD and BCD.
+3. Subset: A selection of objects from the original set.
+   - Ex: Subset of ABCD: 'A', 'B', 'C', 'D', 'AB', 'BC', 'BD', ....
+
+
+
+Permutation-I:
+- This set of problems related to generating(subset of) all possible
+  permutations. Let's have a look at first problem: Permutation.
+- In this problem, we should return 'all' the possible permutations 
+  from distinct integers array.
+
+void backtrack(vector& nums, vector>& res, 
+		vector<int>& cur, unordered_set<int>& used) {
+	if (cur.size() == nums.size()) { // (1)
+		res.push_back(cur);
+		return;
+	}
+	for (int i = 0; i < nums.size(); i++) {
+		if (!used.count(nums[i])) {  // (2)
+			cur.push_back(nums[i]);
+			used.insert(nums[i]);
+			backtrack(nums, res, cur, used);
+			cur.pop_back();          // (3)
+			used.erase(nums[i]);
+		}
+	}
+}
+// Or we can implement backtrack() without using unordered_set<>.
+void backtrack2(vector<int>& nums, int ind,
+		   vector<vector<int>>& res) { // (1)
+	if (ind == nums.size()) {
+		res.push_back(nums);
+		return;
+	}
+	for (int i = ind; i < nums.size(); i++) { // (2)
+		swap(nums[i], nums[ind]);
+		backtrack(nums, ind + 1, res);
+		swap(nums[i], nums[ind]); // (3)
+	}
+}
+
+You might notice that we change the original template a bit:
+1. We stop our exploration if the current array size is equal to the
+   input array size, and we add current array to our result set.
+2. As input array consist of distinct elements we can use unordered_set
+   to track if the elements has used before.
+3. Backtrack: When we explore element we should remove it from vector 
+   and unordered_set.
+Note: We can also swap(), but it is easier to show the pattern using
+      unordered_set.
+
+Permutation-II:
+- The only difference between first problem is that we 'MAY' have 
+  'DUPLICATES' in the input array.
+
+void backtrack(vector& nums, vector& cur, vector>& res,
+		 unordered_map& hmap) {
+	if (cur.size() == nums.size()) { // (1)
+		res.push_back(cur);
+		return;
+	}
+	for (auto& [num, freq] : hmap) { // (2)
+		if (freq == 0) continue;     // (3)
+		freq--;
+		cur.push_back(num);
+		dfs(nums, cur, res, hmap);
+		cur.pop_back();              // (4)
+		freq++;
+	}
+}
+// Iterate over the original list, but check if the previous element is the same as current. 
+// We need to make this check because using the same element will give us the same result as last iteration.
+void backtrack2(vector<int>& nums, vector<int>& temp,
+                  vector<vector<int>>& res, unordered_map<int, int>& freq) {
+        if (temp.size() == nums.size()) {
+            res.push_back(temp);
+            return;
+        }
+        for (int i = 0; i < nums.size(); i++) {
+            if (freq[nums[i]] == 0 || (i != 0 && nums[i] == nums[i - 1])) continue;
+            temp.push_back(nums[i]);
+            freq[nums[i]]--;
+            backtrack(nums, temp, res, freq);
+            freq[nums[i]]++;
+            temp.pop_back();
+        }
+    }
+
+Let's check this algorithm and compare the first problem:
+1. Same as the first problem.
+2. Instead of iteration through the original array, we are iterating 
+   using unordered_map. This unordered_map was build to have element
+   frequencies.
+3. If the element frequency is not equal to zero, we can use it as
+   potential candidate and we should decrease the frequenct, so it
+   won't used again and again.
+4. Backtrack: Remvoe candidate from the current set of candidates
+   (std::vector) and increase candidate frequency.
+Note: We can solve this problem by sorting the input array and change
+      if check in point number 3. We will have a look at this approach
+      in different problem.

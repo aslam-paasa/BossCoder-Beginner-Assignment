@@ -2,40 +2,62 @@ package _10_Recursion_Basic;
 
 public class _02_PMI {
 /**
- * Q. What is PMI?
- * => PMI is like a game where we want to prove that a statement is true
- *    for all positive integers(1, 2, 3, ...)
- * 
- * The Game:
- * => Let's say we want to prove that teh statement "F(n) = n" is true
- *    for all positive integers.
- * 
- * Step-1: Base Case:
- * => We start by proving it's true for the smallest positive integer, 
- *    which is 1:
- * 
- *    F(1) = 1 (this is like the foundation of our game)
- * 
- * Step-2: Inductive Step: 
- * => Now, we assume it's true for some number k:
- * 
- *    F(k) = k (this is like the previous level of our game)
- * 
- * Step-3: Step 3: Prove it for k+1: 
- * => We need to prove it's true for the next number, which is k+1:
- * 
- *    F(k+1) = F(k) + 1 (using the previous level)
- *           = k + 1 (because F(k) = k)
- * 
- * Ta-da!: We proved it's true for k+1!
- * 
- * 
- * The Magic: 
- * => Now, we can use the same steps to prove it's true for k+2, k+3, 
- *    and so on...
- * 
- * Conclusion: 
- * => Since we proved the base case and the inductive step, we can 
- *    conclude that F(n) = n is true for all positive integers!
- * */ 
+ * Recursion:
+ * - Recursion is technique used in computer science to solve big problems
+ *   by breaking them into smaller, similar problems. The process in 
+ *   which a fn calls itself directly or indirectly is called recursion
+ *   and the corresponding fn is called recursive fn.
+ * - Using a recursive algorithm, certain problems can be solved quite
+ *   easily.
+*/ 
+
+/**
+ * What is a Recursive Algorithm?
+ * - A recursive algorithm is an algorithm that uses recursion to solve
+ *   a problem.
+ * - Recursive algorithms typically has two parts:
+ *   a. Base Case: Which is a condition that stops the recursion.
+ *   b. Recursive Case: Which is a call to the fn itself with a smaller
+ *      version of the problem.
+*/
+
+/**
+ * Type of Recursion:
+ * - There are several different recursion types and terms. These include:
+ *   a. Direct Recursion: This is typified by the factorial implementation
+ *      where the methods call itself.
+ *   b. Indirect Recursion: This happens where on method, say Method A
+ *      calls another Method B, which then calls Method A. This involves
+ *      two or more methods that eventually create a circular call
+ *      sequence.
+ *   c. Head Recursion: The recursive call is made at the beginning of
+ *      the method.
+ *   d. Tail Recursion: The recursive call is the last statement.
+*/
+
+/**
+ * When to use Recursion?
+ * - Recursion is a powerful technique that can be used to solve a wide
+ *   variety of problems. However, it is important to use recursion
+ *   carefully, as it can lead to stack overflows if not used properly.
+ * - Recursion should be used when:
+ *   a. The problem can be broken down into smaller subproblem that can
+ *      be solved recursively.
+ *   b. The base case is easy to identify.
+ *   c. The recursive calls are tail recursive.
+*/
+
+/**
+ * Applications of Recursion Algorithms:
+ * 1. Tree and Graph: DFS & BFS
+ * 2. Dynamic Programming: Solving optimization problems by breaking
+ *    them into smaller subproblems.
+ * 3. Divide-And-Conquer: Solving problem by dividing them into smaller
+ *    parts, solving each part recursively, and combining the results.
+ * 4. Backtracking: Exploring all possible solutions to a problem by
+ *    recursively trying different options
+ * 5. Combinatorics: Counting or generating all possible combinations 
+ *    or permutations of a set.
+*/
+
 }

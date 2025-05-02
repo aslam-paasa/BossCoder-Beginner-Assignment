@@ -1,5 +1,7 @@
 package _20_Stack;
 
+import java.util.Stack;
+
 public class _02_StackIntro {
     /**
      * Stack: [LIFO: Last In First Out]
@@ -53,4 +55,25 @@ public class _02_StackIntro {
      * 
      * Note: Insertion and Deletion both occur at the top of the stack.
     */
+
+    public static void main(String[] args) {
+        Stack<Integer> st = new Stack<>();
+    
+        st.push(10);
+        System.out.println(st + " -> " + st.peek() + " " + st.size());
+        st.push(20);
+        System.out.println(st + " -> " + st.peek() + " " + st.size());
+        st.push(30);
+        System.out.println(st + " -> " + st.peek() + " " + st.size());
+        st.push(40);
+        System.out.println(st + " -> " + st.peek() + " " + st.size());
+        st.pop();
+        System.out.println(st.peek() + " " + st.size());
+        st.pop();
+        System.out.println(st.peek() + " " + st.size());
+        st.pop();
+        System.out.println(st.peek() + " " + st.size());
+        st.pop();
+        System.out.println(st + " -> " + st.size());
+    }
 }

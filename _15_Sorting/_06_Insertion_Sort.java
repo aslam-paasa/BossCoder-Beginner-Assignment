@@ -5,6 +5,69 @@ import java.util.Scanner;
 public class _06_Insertion_Sort {
 
     /**
+     * Scenario:
+     * In the previous algorithm, we are fixing the positions of element
+     * in the array like what will come at 0th position, 1st position etc.
+     * But in this case of school assembly line, students are standing in 
+     * the assembly line and assembly started then one student came late. 
+     * Now where this student will stand? He will try to analyze & find 
+     * his position in the already sorted assembly line based on his height, 
+     * and then one-by-one he shift all the other students one step back
+     * whose height is larger than his. Similarly, we arrange the playing
+     * cards one-by-one using this approach to their respective position.
+     * 
+     * height = [2, 4, 7, 9, 15],   k = 5
+     *        = [2, 4, 5, 7, 9, 15]
+     * 
+     * height = [10, 6, 14, 20, 2, 19]
+     *        = [6, 10, 14, 20, 2, 19]
+     *        = [6, 10, 14, 20, 2, 19]
+     *        = [2, 6, 10, 14, 20, 19]
+     *        = [2, 6, 10, 14, 19, 20]
+     * 
+     * This sorting is called Insertion Sort.
+     * 
+     * 
+     * PseudoCode:
+     * for(int i = 1; i < n; i++) {
+     *    int j = i;
+     *    // Compare current element with all previous elements and swap if needed
+     *    while(j > 0 && arr[j] < arr[j - 1]) {
+     *       swap(arr[j], arr[j - 1]);  
+     *       j--;  
+     *    }
+     * }
+     * 
+     * 
+     * PseudoCode: Enter element in its fixed position
+     * for(int i = 1; i < n; i++) {
+     *    int key = arr[i];  // Current element to be inserted
+     *    int j = i - 1;
+     *    // Shift elements greater than key to one position ahead
+     *    while(j >= 0 && arr[j] > key) {
+     *       arr[j + 1] = arr[j];  // Shift larger elements to the right
+     *       j--;
+     *    }
+     *    arr[j + 1] = key;  // Place the current element in its correct position
+     * }
+     * 
+     * Analysis:
+     * 1. Number of swaps       : O(N^2) swaps
+     * 2. Number of comparisons : O(N^2)
+     *    (a) 1st iteration = n-comparison
+     *    (b) 2nd iteration = n-1 comparison
+     *    (c) 3rd iteration = n-2 comparison
+     *        ...
+     *    (z) nth iteration = 1 comparison
+     *    => Total Comparison = n(n+1)/2 => (n^2 + n) / 2 => n^2 
+     * 3. Time Complexity       : O(N^2)
+     * 4. Space Complexity      : O(1)
+     * 5. Stable or Unstable    : Stable
+     *    => My duplicate element will never jump.
+     *    => arr[j] < arr[j - 1]   
+     * */
+
+    /**
      * Insertion Sort: O(n^2)
      * => Insertion Sort ek comparison based sorting technique hai jo
      *    array ko sort karti hai by shifting the element one by one from

@@ -79,7 +79,4 @@ public class _33_EquilibriumIndex {
      * }
     */
 
-    /**
-     * Approach-3: Try Prefix-Suffix Sum yourself
-    */
 }

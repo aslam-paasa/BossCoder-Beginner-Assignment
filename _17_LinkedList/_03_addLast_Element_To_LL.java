@@ -6,7 +6,7 @@ import java.util.Scanner;
  * LinkedList Vs Array Vs ArrayList:
  * 1. int[] arr = new int[5];
  * 2. ArrayList<> list = new ArrayList<>();
- * => Array bnta heap mai bnta hai aur iski memory continuous store
+ * => Array heap mai bnta hai aur iski memory continuous store
  *    hoti jisse O(1) TC hoti hai lekin iski limitation iski fixed 
  *    size hai.
  * => ArrayList ka size dynamic hoti hai aur memory continuous store
@@ -52,7 +52,7 @@ import java.util.Scanner;
  *                       
 */
 
-public class _03_addLast {
+public class _03_addLast_Element_To_LL {
 
     /**
      * Yeh LinkedList class hai jisme hum 3 cheezein store karte hain:

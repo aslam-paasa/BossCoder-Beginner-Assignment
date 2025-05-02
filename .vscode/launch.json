@@ -1,5 +1,33 @@
 {
     "configurations": [
+        {
+            "type": "java",
+            "name": "_03_Pattern",
+            "request": "launch",
+            "mainClass": "_06_Pattern._03_Pattern",
+            "projectName": "BossCoder-Beginner-Assignment_19845a61"
+        },
+        {
+            "type": "java",
+            "name": "_02_Pattern",
+            "request": "launch",
+            "mainClass": "_06_Pattern._02_Pattern",
+            "projectName": "BossCoder-Beginner-Assignment_19845a61"
+        },
+        {
+            "type": "java",
+            "name": "_01_Pattern",
+            "request": "launch",
+            "mainClass": "_06_Pattern._01_Pattern",
+            "projectName": "BossCoder-Beginner-Assignment_19845a61"
+        },
+        {
+            "type": "java",
+            "name": "_02_StackIntro",
+            "request": "launch",
+            "mainClass": "_20_Stack._02_StackIntro",
+            "projectName": "BossCoder-Beginner-Assignment_19845a61"
+        },
         {},
         {
             "type": "java",
